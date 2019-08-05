@@ -1,0 +1,38 @@
+{
+  "name": "alnv/xml-form-generator-bundle",
+  "type": "contao-bundle",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexander Naumov",
+      "homepage": "https://alexandernaumov.de",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Alnv\\XmlFormGeneratorBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/"
+    ]
+  },
+  "require": {
+    "php":">=7.1",
+    "sensio/framework-extra-bundle": "^5.2"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/xml-form-generator-bundle"
+      }
+    },
+    "contao-manager-plugin": "Alnv\\XmlFormGeneratorBundle\\ContaoManager\\Plugin"
+  }
+}
