@@ -32,7 +32,7 @@ class XmlBuilder {
 
                 if ( is_array( $strValue ) ) {
 
-                    $strValue = implode( ', ', $strValue );
+                    $strValue = implode( ',', $strValue );
                 }
 
                 $strBody .= '<' . strtolower( $strFieldname ) . '>' . $strValue . '</' . strtolower( $strFieldname ) . '>';
