@@ -30,6 +30,11 @@ class XmlBuilder {
 
             foreach ( $this->arrData as $strFieldname => $strValue ) {
 
+                if ( is_array( $strValue ) ) {
+
+                    $strValue = implode( ', ', $strValue );
+                }
+
                 $strBody .= '<' . strtolower( $strFieldname ) . '>' . $strValue . '</' . strtolower( $strFieldname ) . '>';
             }
         }
